@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+  height: 100vh;
+  margin-top: 99px;
+  margin-left: 120px;
+}
+
+header {
+  margin-right: 120px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 84px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.squares {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+#logosquare1 {
+  border: 1px solid #27272a;
+  background-color: #18181b;
+}
+
+#logosquare2 {
+  border: 1px solid #6d28d9;
+  background-color: #4c1d95;
+}
+
+#logosquare3 {
+  border: 1px solid #7c3aed;
+  background-color: #5b21b6;
+}
+
+#logosquare4 {
+  border: 1px solid #8b5cf6;
+  background-color: #6d28d9;
+}
+
+#logosquare5 {
+  border: 1px solid #a78bfa;
+  background-color: #7c3aed;
+}
+
+#logosquare6 {
+  border: 1px solid #c4b5fd;
+  background-color: #8b5cf6;
+}
+
+.logo h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+header button {
+  padding: 16px 24px;
+  gap: 12px;
+  border: 1px solid #885cf6;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+
+#form-habits {
+  display: flex;
+  width: fit-content;
+  padding: 0 0 30px 0;
+}
+
+.habits {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  margin-right: 48px;
+  background: #18181b;
+}
+
+input:checked {
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+  background: #8b5cf6;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
